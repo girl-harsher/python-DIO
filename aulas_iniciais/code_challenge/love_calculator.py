@@ -1,6 +1,6 @@
 print("The Love Calculator is calculating your score...")
 name1 = input("What is your name? ")
-name2 = input("What is her name? ")
+name2 = input("What is their name? ")
 
 def calculate_love_score(name1, name2):
     
