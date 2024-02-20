@@ -14,7 +14,7 @@ def enter_rollercoaster (height, pay):
             print("Ticket price for youths $7.")
         elif age >= 45 and age <= 55:
             pay = 0
-            print("Ticket price is free!") 
+            print("Ticket is free for you!") 
         else:
             pay = 12
             print("Ticket price for adults $12.")
