@@ -33,19 +33,3 @@ while True:
     else:
         print("Please, insert a valid command ==> Y or N.")
 
-
-
-
-
-
-
-# photos = input("Do you want photos? Y or N? ")
-
-# if photos == "y" or photos == "Y":
-#     pay += 3
-#     print(f"+ $3\nThe total is ${pay}")
-# elif photos == "n" or photos == "N":
-#     print(f"The total is ${pay}")
-# else:
-#     print("Please, insert a valid command ==> Y or N.")
-#     pay = enter_rollercoaster(height, pay)
