@@ -1,0 +1,110 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+import random
+
+print("Welcome to Rock, Paper, Scissors!")
+your_choice = ""
+cpu_choice = ""
+options = [rock, paper, scissors]
+player_choice = int(
+    input(
+        "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"
+    ))
+
+random_choice = random.sample(options, 1)[0]
+if player_choice >= 3 or player_choice < 0:
+    print("You typed an invalid number, slut. you lose!")
+
+elif player_choice == 0:
+    print(
+        f"You chose:\n{options[player_choice]}\nComputer chose:{random_choice}\n"
+    )
+    if random_choice == options[0]:
+        your_choice = "Rock"
+        cpu_choice = "Rock"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. It's a draw, sucker!"
+        )
+    elif random_choice == options[1]:
+        your_choice = "Rock"
+        cpu_choice = "Paper"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. You lose, bitch!"
+        )
+    elif random_choice == options[2]:
+        your_choice = "Rock"
+        cpu_choice = "Scissors"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. You win, jerk!"
+        )
+
+elif player_choice == 1:
+    print(
+        f"You chose:\n{options[player_choice]}\nComputer chose:{random_choice}\n"
+    )
+    if random_choice == options[0]:
+        your_choice = "Paper"
+        cpu_choice = "Rock"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. You win, jerk!"
+        )
+    elif random_choice == options[1]:
+        your_choice = "Paper"
+        cpu_choice = "Paper"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. It's a draw, sucker!"
+        )
+    elif random_choice == options[2]:
+        your_choice = "Paper"
+        cpu_choice = "Scissors"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. You lose, bitch!"
+        )
+
+elif player_choice == 2:
+    print(
+        f"You chose:\n{options[player_choice]}\nComputer chose:{random_choice}\n"
+    )
+    if random_choice == options[0]:
+        your_choice = "Scissors"
+        cpu_choice = "Rock"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. You lose, bitch!"
+        )
+    elif random_choice == options[1]:
+        your_choice = "Scissors"
+        cpu_choice = "Paper"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. You win, jerk!"
+        )
+    elif random_choice == options[2]:
+        your_choice = "Scissors"
+        cpu_choice = "Scissors"
+        print(
+            f"You chose {your_choice} and CPU chose {cpu_choice}. Its a draw, sucker!"
+        )
